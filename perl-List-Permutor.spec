@@ -9,7 +9,7 @@ Summary:	List::Permutor - process all of the possible permutations of a list of 
 Summary(pl):	List::Permutor - przetwarzanie wszystkich mo¿liwych permutacji listy elementów
 Name:		perl-List-Permutor
 Version:	0.022
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
