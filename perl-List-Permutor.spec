@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	List
-%define	pnam	Permutor
+%define		pdir	List
+%define		pnam	Permutor
 Summary:	List::Permutor - process all of the possible permutations of a list of items
 Summary(pl):	List::Permutor - przetwarzanie wszystkich mo¿liwych permutacji listy elementów
 Name:		perl-List-Permutor
