@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	List
 %define		pnam	Permutor
@@ -6,7 +10,7 @@ Summary(pl):	List::Permutor - przetwarzanie wszystkich mo¿liwych permutacji list
 Name:		perl-List-Permutor
 Version:	0.022
 Release:	2
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b5c0f922730b9493c7c1e0583a5c8f78
@@ -30,7 +34,8 @@ wywo³aniem next(), zwracana jest kolejna permutacja.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
