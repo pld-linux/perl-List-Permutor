@@ -6,7 +6,7 @@
 %define		pdir	List
 %define		pnam	Permutor
 Summary:	List::Permutor - process all of the possible permutations of a list of items
-Summary(pl):	List::Permutor - przetwarzanie wszystkich moøliwych permutacji listy elementÛw
+Summary(pl.UTF-8):   List::Permutor - przetwarzanie wszystkich mo≈ºliwych permutacji listy element√≥w
 Name:		perl-List-Permutor
 Version:	0.022
 Release:	3
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Make the object by passing a list of the objects to be permuted. Each
 time that next() is called, another permutation will be returned.
 
-%description -l pl
-Tworzy obiekt po przekazaniu listy obiektÛw do permutowania. Za kaødym
-wywo≥aniem next(), zwracana jest kolejna permutacja.
+%description -l pl.UTF-8
+Tworzy obiekt po przekazaniu listy obiekt√≥w do permutowania. Za ka≈ºdym
+wywo≈Çaniem next(), zwracana jest kolejna permutacja.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
