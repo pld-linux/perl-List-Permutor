@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	List
 %define		pnam	Permutor
+%include	/usr/lib/rpm/macros.perl
 Summary:	List::Permutor - process all of the possible permutations of a list of items
 Summary(pl.UTF-8):	List::Permutor - przetwarzanie wszystkich możliwych permutacji listy elementów
 Name:		perl-List-Permutor
@@ -14,6 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b5c0f922730b9493c7c1e0583a5c8f78
+URL:		http://search.cpan.org/dist/List-Permutor/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
