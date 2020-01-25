@@ -4,7 +4,6 @@
 
 %define		pdir	List
 %define		pnam	Permutor
-%include	/usr/lib/rpm/macros.perl
 Summary:	List::Permutor - process all of the possible permutations of a list of items
 Summary(pl.UTF-8):	List::Permutor - przetwarzanie wszystkich możliwych permutacji listy elementów
 Name:		perl-List-Permutor
